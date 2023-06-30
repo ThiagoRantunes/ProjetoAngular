@@ -9,7 +9,7 @@ Configurações adicionadas ao projeto:
     Package Manager: npm 7.19.1
     OS: win32 x64
 
-    Angular: 15.2.7
+    Angular: 15.2.7                                                                                                        
     ... common, compiler, compiler-cli, core, forms
     ... language-service, platform-browser, platform-browser-dynamic
     ... router

@@ -1,22 +1,91 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Calculadora
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+<ion-row class="ion-justify-content-center">
+  <ion-col size="12" size-lg="6" class="ion-justify-content-center">
+  <ion-card class="fundo">
+    <ion-card class="result">
+      <ion-row>
+        <ion-label>{{this.resultado}}</ion-label>
+      </ion-row>
+            
+    </ion-card>
+    <ion-row class="cabecario">
+      <ion-button class="btnnav" color="danger" (click)="this.ac(1)">AC</ion-button>
+      <ion-button class="btnnav" color="light" (click)="this.porcentagem()">%</ion-button>
+    </ion-row>
+         
+    <ion-row>
+
+    <ion-col class="btn">
+
+    <ion-button color="medium" (click)="this.numeros('9')">9</ion-button>
+    <ion-button color="medium" (click)="this.numeros('8')">8</ion-button>
+    <ion-button color="medium" (click)="this.numeros('7')">7</ion-button>
+    <ion-button color="light" (click)="this.operacoes('+')">+</ion-button> 
+    <ion-button color="medium" (click)="this.numeros('6')">6</ion-button>
+    <ion-button color="medium" (click)="this.numeros('5')">5</ion-button>
+    <ion-button color="medium" (click)="this.numeros('4')">4</ion-button>
+    <ion-button color="light" (click)="this.operacoes('-')">-</ion-button>
+    <ion-button color="medium" (click)="this.numeros('3')">3</ion-button>
+    <ion-button color="medium" (click)="this.numeros('2')">2</ion-button>   
+    <ion-button color="medium" (click)="this.numeros('1')">1</ion-button>
+    <ion-button color="light" (click)="this.operacoes('*')">*</ion-button> 
+    <ion-button color="light" (click)="this.ponto('.')">,</ion-button>
+    <ion-button color="medium" (click)="this.numeros('0')">0</ion-button>
+    <ion-button color="light" (click)="this.igual(1)">=</ion-button>
+    <ion-button color="light" (click)="this.operacoes('/')">/</ion-button> 
+    </ion-col>
+    </ion-row>
+    
+    </ion-card>
+  </ion-col>
+</ion-row>
+    
+
 </ion-content>
+
+
+<!-- <ion-grid>
+  <ion-row>
+    <ion-col><ion-button>AC</ion-button></ion-col>
+    <ion-col><ion-button>1</ion-button></ion-col>
+    <ion-col><ion-button>2</ion-button></ion-col>
+    <ion-col><ion-button>+</ion-button></ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>1</ion-col>
+    <ion-col>2</ion-col>
+    <ion-col>3</ion-col>
+    <ion-col>4</ion-col>
+    <ion-col>5</ion-col>
+    <ion-col>6</ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>1</ion-col>
+    <ion-col>2</ion-col>
+    <ion-col>3</ion-col>
+    <ion-col>4</ion-col>
+    <ion-col>5</ion-col>
+    <ion-col>6</ion-col>
+    <ion-col>7</ion-col>
+    <ion-col>8</ion-col>
+    <ion-col>9</ion-col>
+    <ion-col>10</ion-col>
+    <ion-col>11</ion-col>
+    <ion-col>12</ion-col>
+  </ion-row>
+</ion-grid> -->
